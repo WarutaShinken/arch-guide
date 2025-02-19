@@ -32,7 +32,7 @@ gpg --keyserver-options auto-key-retrieve --verify archlinux-<version>-x86_64.is
 The output should look something like this (the `Good signature from <developer name and email>` line is the important part):
 ```
 gpg: assuming signed data in 'archlinux-<version>-x86_64.iso'
-gpg: Signature made <date and time with your timezone>
+gpg: Signature made <date and time in your timezone>
 gpg:                using <algorithm> key <hexadecimal key fingerprint>
 gpg:                issuer "<developer email>"
 gpg: <path to trustdb.gpg>: trustdb created
@@ -61,12 +61,12 @@ pacman-key -v archlinux-<version>-x86_64.iso.sig
 
 If the image is fine, the output should look something like this:
 ```
-==> Checking archlinux-2022.12.01-x86_64.iso.sig... (detached)
-gpg: Signature made <date and time in utc>
-gpg:                using RSA key <hexadecimal key fingerprint>
-gpg: Good signature from <name and email> [full]
-                     aka <name and email> [full]
-pacman-key -v archlinux-<version>.iso.sig <performance results>
+==> Checking archlinux-<version>-x86_64.iso.sig... (detached)
+gpg: Signature made <date and time in your timezone>
+gpg:                using <algorithm> key <hexadecimal key fingerprint>
+gpg:                issuer "<developer email>"
+gpg: Good signature from "<developer name and email>" [full]
+gpg:                 aka "<developer name and email>" [unknown]
 ```
 
 Again, compare the PGP key shown in the output with the one [here](https://archlinux.org/people/developers), making sure to match the developer name and email.
