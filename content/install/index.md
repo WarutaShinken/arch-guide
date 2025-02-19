@@ -14,7 +14,7 @@ I will be trying this with an A1237 Macbook Air in the future.
 
 Download Arch Linux from [here](https://archlinux.org/download), I recommend you use the BitTorrent download.
 
-## <a id="verify" href="verify">Verify the Integrity of Your Copy</a>
+## <a id="verify" href="#verify">Verify the Integrity of Your Copy</a>
 
 ### <a id="gpg-install" href="#gpg-install">Install GnuPG</a>
 
@@ -90,7 +90,7 @@ Note that Arch Linux installation images do not support Secure Boot. You will ne
 - [Microsoft intended for Secure Boot to scare people away from using alternative OSes.](https://www.reddit.com/r/archlinux/comments/pyi8f1/comment/hexels5)
 - [Microsoft needs to sign other OSes to allow them to work with Secure Boot.](https://www.reddit.com/r/archlinux/comments/pyi8f1/comment/hevxu45?context=3)
 
-### <a id="old-intel-mac-delay" href="old-intel-mac-delay">Delay on Old Intel-Based Macs</a>
+### <a id="old-intel-mac-delay" href="#old-intel-mac-delay">Delay on Old Intel-Based Macs</a>
 
 If you are installing this on a very old Intel-based Mac, after a boot option is chosen in GRUB, there can be a roughly 2 minute black screen before any text shows up. You may have to be patient in this case before assuming the boot process got stuck. As long as it's progressing, the thumbdrive's activity light will be going off.
 
@@ -146,7 +146,7 @@ If you are booted in EFI mode, you should make a GPT partition table similar to 
 
 Of course, the above examples won't exactly apply to you if you're putting the swap partition at the end of the disk or using a swap file instead. If you want to use a swap file, wait until after you have mounted the root partition.
 
-### <a id="create-partition" href="#disk-example">Example</a>
+### <a id="disk-example" href="#disk-example">Example</a>
 
 Let's use an example of a laptop that was upgraded from a HDD to an SSD:
 * It uses EFI, let's use GPT with a 512 MiB EFI system partition.
