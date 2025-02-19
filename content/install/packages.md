@@ -15,7 +15,7 @@ I recommend these packages:
 * `networkmanager` and `dhcpcd` - Required for internet access.
 * `sudo`, `git` and `base-devel` - Required for cloning and building AUR packages.
   * `git` is important for developers and installing software from Git repos.
-* `htop` - Monitors and manages processes and shows CPU, RAM and SWAP usage.
+* `htop` - Monitors and manages processes and shows CPU, RAM and swap usage.
 * `nmon` - Useful for monitoring disk activity.
 * `lm_sensors` - Useful for monitoring system temperature.
 * `lvm2` - LVM (Logical Volume Manager)
