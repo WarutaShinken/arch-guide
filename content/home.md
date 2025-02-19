@@ -8,7 +8,7 @@ Be aware that a lot of pages are currently undone.
 
 The guide should be followed in this order:
 * [Installation](install/index.md)
-  * [Examples](examples/index.md)
+  * [Examples](install/examples/index.md)
 * [Post-Installation Configuration](configure/index.md)
   * [Creating Users](configure/users.md)
   * [Choosing a GUI Environment](configure/users.md)
