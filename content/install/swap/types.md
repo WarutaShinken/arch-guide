@@ -12,6 +12,7 @@ A swap partition may provide less system overhead than a swap file, as there is 
 
 * The target machine doesn't have a lot of performance to spare.
 * It is expected for the total memory usage to exceed the physical memory capacity, causing swap to be frequently accessed.
+* The target machine uses a HDD, so locking the swap to a specific location on the drive to prevent fragmentation should help with performance.
 
 If using a swap partition, you should choose its location based on the type of drive you're installing to.
 * On a HDD: At the start of drive, right after the EFI boot partition if present. The performance of a HDD is dependent on the location being accessed.

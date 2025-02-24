@@ -42,7 +42,7 @@ If chrooted, exit with `exit` or Ctrl+d.
 
 ### <a id="main-config" href="#main-config">Main Configuration</a>
 
-Edit `loader.conf` file under `<esp mountpoint>/loader/loader.conf`. In the case of a new Arch Linux installation, this is `/mnt/boot/loader/loader.conf`. Set the contents to something like this:
+Edit `<esp mountpoint>/loader/loader.conf`. In the case of a new Arch Linux installation, this is `/mnt/boot/loader/loader.conf`. Set the contents to something like this:
 ```
 default arch.conf
 timeout 4

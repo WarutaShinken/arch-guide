@@ -81,7 +81,7 @@ Rufus formatted thumbdrives are bootable on old Intel-based Macs, unlike USB mul
 
 ## <a id="boot-media" href="#boot-media">Boot From the Installation Medium</a>
 
-It is assumed you know how to boot from a USB drive. Pick the first option in the GRUB menu. Wait until you are presented with a shell prompt.
+It is assumed you know how to boot from a USB drive. Pick the first option in the boot menu. Wait until you are presented with a shell prompt.
 
 ### <a id="secure-boot" href="#secure-boot">Secure Boot</a>
 
@@ -92,7 +92,7 @@ Note that Arch Linux installation images do not support Secure Boot. You will ne
 
 ### <a id="old-intel-mac-delay" href="#old-intel-mac-delay">Delay on Old Intel-Based Macs</a>
 
-If you are installing this on a very old Intel-based Mac, after a boot option is chosen in GRUB, there can be a roughly 2 minute black screen before any text shows up. You may have to be patient in this case before assuming the boot process got stuck. As long as it's progressing, the thumbdrive's activity light will be going off.
+If you are installing this on a very old Intel-based Mac, after a boot option is chosen, there can be a roughly 2 minute black screen before any text shows up. You may have to be patient in this case before assuming the boot process got stuck. As long as it's progressing, the thumbdrive's activity light will be going off.
 
 This was the case for my A1225 Mac.
 
@@ -127,7 +127,7 @@ Do not assume that just because a system is really old that it doesn't use EFI. 
 
 ### <a id="plan-disk" href="#plan-disk">Planning</a>
 
-Make a choice between a swap file and a swap partition [here](swap/swap_types.md). Your swap size should be equal to the amount of physical memory (unless there's a huge amount of it) or 2 GB if there's less than 2 GB of it.
+Make a choice between a swap file and a swap partition [here](swap/types.md). Your swap size should be equal to the amount of physical memory (unless there's a huge amount of it) or 2 GB if there's less than 2 GB of it.
 
 If you are booted in legacy BIOS/CSM mode, you should make an MBR/DOS partition table similar to this:
 
@@ -136,7 +136,7 @@ If you are booted in legacy BIOS/CSM mode, you should make an MBR/DOS partition 
 |Swap|Depends on RAM|Linux Swap|\[SWAP]|
 |Root/OS|Remainder of Disk|ext4|/mnt|
 
-If you are booted in EFI mode, you should make a GPT partition table similar to this. Note the existence of a >=300 MIB FAT32 partition at the start:
+If you are booted in EFI mode, you should make a GPT partition table similar to this. Note the existence of a >=300 MiB FAT32 partition at the start:
 
 |Partition|Recommended Size|File System|Mount Point (during installation)|
 |-|-|-|-|
